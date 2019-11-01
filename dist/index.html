@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Digit Recognizer using TensorFlow.js Demo</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/app.ed7d1cf1.css">
+<script src="/app.ed7d1cf1.js"></script></head>
+
+<body>
+
+
+	
+	<div class="container">
+		<div class="digit-demo-container">
+			<h3 id="digit-recognizer-live-demo">Live Handwritten Digit Recognizer</h3>
+			<div class="flex-two" style="margin-top: 20px;">
+				<button id="clear_canvas" class="material-button-pink" onclick="clearCanvas(this.id)">Clear</button>
+				<!--
+				<select id="select_model">
+					<option>MLP</option>
+					<option>CNN</option>
+				</select>-->
+				<button id="predict_canvas" class="material-button-pink">Predict</button>
+			</div>
+			<div class="flex-two">
+				<div id="canvas_box_wrapper" class="canvas-box-wrapper">
+					<div id="canvas_box" class="canvas-box"></div>
+				</div>
+				<div id="result_box">
+					<canvas id="chart_box" width="100" height="100"></canvas>
+					<strong>
+					<p id="output"> </p></strong>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<audio id="aud0"> <source src="/0.52cd8fcc.mp3" type="audio/mpeg"></audio>
+	<audio id="aud1"> <source src="/1.c4256366.mp3" type="audio/mpeg"></audio>
+	<audio id="aud2"> <source src="/2.1d7431f6.mp3" type="audio/mpeg"></audio>
+	<audio id="aud3"> <source src="/3.3668c8e9.mp3" type="audio/mpeg"></audio>
+	<audio id="aud4"> <source src="/4.4f7d5339.mp3" type="audio/mpeg"></audio>
+	<audio id="aud5"> <source src="/5.95bdbc74.mp3" type="audio/mpeg"></audio>
+	<audio id="aud6"> <source src="/6.342277e2.mp3" type="audio/mpeg"></audio>
+	<audio id="aud7"> <source src="/7.38bd088b.mp3" type="audio/mpeg"></audio>
+	<audio id="aud8"> <source src="/8.9f98f6b9.mp3" type="audio/mpeg"></audio>
+	<audio id="aud9"> <source src="/9.f431947a.mp3" type="audio/mpeg"></audio>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+	<script type="text/javascript" src="/app.c3f9f951.js"></script>
+	
+</body>
+</html>
